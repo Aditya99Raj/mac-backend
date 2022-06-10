@@ -31,7 +31,7 @@ app.use("/jackets",jacketController)
 app.use("/middis",midditController)
 app.post("/register",register)
 app.post ("/login",login)
-
+app.get("/", (req, res) => res.send("Hello !"));
 
 
 app.listen(port, async () => {
